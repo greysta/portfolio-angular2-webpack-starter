@@ -1,0 +1,65 @@
+[
+  {
+    "id": 101,
+    "cat": "web",
+    "title": "Qantas homepage refresh",
+    "info": "The goal of the Qantas homepage refresh was to modernise the aesthetic, improve the user experience and increase conversions on flight bookings. The tricky part was that there wasn’t scope for a back-end rebuild, so we simply had to work with what was already there and almost skin the front end into something new. The design didn’t need to be responsive as there is a separate mobile site. I’ll take you through the mobile site refresh in a separate case study. Looking at the old homepage above, it’s clear that the goal was to fit everything above the fold. I suspect that it may have been a business or marketing requirement at the time. Somehow, the designer of the page managed to do it, which is actually pretty impressive. It must have been tricky as there are quite a few elements to fit on the page. Because everything is above the fold, however, the page is quite busy and cluttered, making it difficult for users to find what they’re looking for. We used our findings from analytics and user feedback on the old Qantas homepage to help inform our new design.",
+    "image": "./assets/images/port/101-min.jpg"
+  },
+  {
+    "id": 102,
+    "cat": "app",
+    "title": "Rethinking flight search",
+    "info": "Design in motion is a global event held yearly by the folks at General Assembly. The idea of it is to see how real designers solve a given problem using the design thinking process. This year’s brief was to rethink flight search and we only had a few weeks to come up with a solution. I teamed up with one of my colleagues, Damian Norton, to put together our flight search concept. Three other designers, Adrian Ciaschetti, Sash Singh and Emma Lundgren, also presented their concepts and how they came up with them.The event was on 30 June 2016 and it was a great night out at the Powerhouse Museum with some interesting concepts presented. There were a bunch of people who couldn’t make it to the event that night, so I wrote this article to document our flight search concept and how we used design thinking to come up with it. I hope this process comes in handy for your next project, and I’m also keen to hear your feedback about our design concept.",
+    "image": "./assets/images/port/102-min.jpg"
+  },
+  {
+    "id": 103,
+    "cat": "app",
+    "title": "Monitor App Design",
+    "info": "On the verge of Apple’s iOS7 release, I was tasked with designing an iphone app that empowered email marketers to monitor their email campaigns and subscriber activity while on the go. The app needed to feel native to iOS while also encompassing Campaign Monitor’s unique aesthetic. Campaign Monitor is a web application used on desktop-sized screens to create and send email campaigns. But what if a user is on the train and wants to check the click-through rate of their latest email campaign? What if they’re outside the office and they need to know who subscribed today and where they’re from? We saw an opportunity to empower users to monitor their campaigns and subscriber activity in real time from their mobile phones. I’ll take you through the design process we used to create the Monitor app below.",
+    "image": "./assets/images/port/103-min.jpg"
+  },
+  {
+    "id": 104,
+    "cat": "design",
+    "title": "Brand and Website Design",
+    "info": "Quest Research is a passive talent sourcing firm providing specialist recruitment research services. I redesigned their brand and website to give it a bit of a refresh. After talking to the client and doing some research into the company, I decided that the brand needed to have a professional, corporate aesthetic that still appealed to those in the technology sector. We wanted to create a symbol that represented the company and its ideals of speed, agility and intelligence. Our belief that a relatively small company can still be powerful was also something we wanted to capture in the symbolism. We threw some ideas around and started looking to the animal kingdom, particularly birds, for inspiration. We discovered that the kingfisher, although relatively small and unassuming, was a fast and intelligent hunter – a perfect symbol for a company that uses technology and data to hunt for talented human resources.",
+    "image": "./assets/images/port/104-min.jpg"
+  },
+  {
+    "id": 105,
+    "cat": "web",
+    "title": "Segment Builder Design",
+    "info": "The segment builder provides a simple yet powerful way for email marketers to send campaigns to specific groups of people who match certain rules and criteria. Over the years we’ve been collecting feedback from customers regarding how they’d like to be able to organise their subscribers into segments. We sorted through customer feedback to figure out the requirements for the new segment builder. There were a lot of different feature requests and it would take forever to get them all built, so we listed out the main features, prioritised them and concentrated on the ones that would make the most impact. During this requirements-gathering phase we also looked at competitor products and realised that our differentiator would be to concentrate on simplicity of use, cutting back on unnecessary features and complexity.",
+    "image": "./assets/images/port/105-min.jpg"
+  },
+  {
+    "id": 106,
+    "cat": "design",
+    "title": "Growth Giant - Brand Design",
+    "info": "Growth Giant is an A/B testing tool that a few friends and I created for a bit of fun on the side. I enjoyed the challenge of designing this fun and quirky brand. The difference between Growth Giant and other A/B testing tools is that our tool dynamically directs website visitors to the better performing page, to ensure that you get the maximum conversion rate possible. Most A/B testing tools out there look and feel quite technical, but we wanted our brand to be fun, friendly and accessible. The above logo design is very minimal with the upward-sloping arrow symbolising a line chart of increasing conversions. I wanted to create a symbol that incorporated growth, and a chart is a simple way to do that visually. I used rounded corners and soft pastel colours to achieve a soft and friendly aesthetic.",
+    "image": "./assets/images/port/106-min.jpg"
+  },
+  {
+    "id": 107,
+    "cat": "design",
+    "title": "Freelancer.com brand design",
+    "info": "Freelancer.com is the world’s largest freelancing, outsourcing and crowdsourcing marketplace. They connect over 13 million employers and freelancers globally from over 247 countries, regions and territories. Being an early-stage startup, the branding for the company hadn’t yet been well defined. The aim was to create a fun and colourful brand concept that incorporated the existing logo design and hummingbird symbol. After throwing around a bunch of different ideas, we decided to take an illustrative approach. We used sharp angles and a unique illustrative style to create an origami world of birds as seen below.",
+    "image": "./assets/images/port/107-min.jpg"
+  },
+  {
+    "id": 108,
+    "cat": "web",
+    "title": "Freelancer.com landing page",
+    "info": "I designed this landing page for a Scavenger Hunt competition that we were holding at the time. The design needed to be bright and exciting to encourage people to participate. I added some subtle animations to the page by making the stars scroll across the sky while the bird hovers slightly up and down. It’s always nice to add little extras like this if there’s time as it can make a big difference to the final product.",
+    "image": "./assets/images/port/108-min.jpg"
+  },
+  {
+    "id": 109,
+    "cat": "app",
+    "title": "Growth Giant ux&ui",
+    "info": "A/B split testing tools are fast becoming a popular way for companies to improve sign-ups and sales on their websites. The way it works is pretty simple. Let’s say that your current web page (version A) gets an average of 100 sign-ups per month. You then design a new web page (version B) that you believe could increase sign-ups. A/B split testing tools basically split your visitors in half, with half going to version A and the other half to version B. The number of sign-ups is recorded against each version and once there is enough data, a winner is determined (if it exists).",
+    "image": "./assets/images/port/109-min.jpg"
+  }
+]

@@ -1,0 +1,53 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Contact us</h1>
+  </div>
+</section>
+<div class="container">
+  <div class=".col-md-6 .col-md-offset-3">
+    <h2>Get in touche</h2>
+    <form [formGroup]="myForm" novalidate (ngSubmit)="submit()">
+      <div class="form-group">
+        <label>Name <b class="red">*</b></label>
+        <input class="form-control" name="name" formControlName="userName" placeholder="Enter your name"/>
+
+        <div class="alert alert-danger"
+             *ngIf="myForm.controls['userName'].invalid && myForm.controls['userName'].touched">
+          This field can not be empty! Please enter your name.
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email <b class="red">*</b></label>
+        <input class="form-control" name="email" formControlName="userEmail" placeholder="Enter your email"/>
+
+        <div class="alert alert-danger"
+             *ngIf="myForm.controls['userEmail'].invalid && myForm.controls['userEmail'].touched">
+          Invalid email address. Please enter a valid email address.
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Telephone</label>
+        <input class="form-control" name="phone" [textMask]="{mask: mask}" [(ngModel)]="myModel"
+               formControlName="userPhone" placeholder="Enter the phone number in the format x(xxx) xxx-xxxx"/>
+      </div>
+      <div class="form-group">
+        <label>Message <b class="red">*</b></label>
+        <textarea class="form-control" name="message" formControlName="userMessage"
+                  placeholder="Enter your message"></textarea>
+
+        <div class="alert alert-danger"
+             *ngIf="myForm.controls['userMessage'].invalid && myForm.controls['userMessage'].touched">
+          This field can not be empty! Please enter your message.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-default" [disabled]="myForm.invalid">
+          Send a message
+        </button>
+      </div>
+      <b class="red" *ngIf="myForm.invalid">* Fill in all the required fields!</b>
+    </form>
+
+  </div>
+</div>

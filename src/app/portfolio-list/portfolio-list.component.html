@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div align="center" *ngIf="projNumb>3">
+      <button class="btn btn-default" (click)="toggle('')">All</button>
+      <button class="btn btn-default" (click)="toggle('web')">Web</button>
+      <button class="btn btn-default" (click)="toggle('app')">App</button>
+      <button class="btn btn-default" (click)="toggle('design')">Design</button>
+    </div>
+    <div class="ShowItemRight" *ngIf="projNumb<10">
+      Show <select [ngModel]="selectedShowItem" (ngModelChange)="onChange($event)">
+      <option [value]="i" *ngFor="let i of showItems">{{i}}</option>
+    </select> items
+    </div>
+    <br/>
+    <div *ngFor="let proj of projects; let i = index">
+      <div *ngIf="i<projNumb" [style.display]="proj.cat==catName||catName==''?'block':'none'"
+           class="col-md-4 portfolio-item">
+        <h3><a routerLink="/portfolio/{{proj.id}}">{{proj.title}}</a></h3>
+        <a routerLink="/portfolio/{{proj.id}}"><img src="{{proj.image}}"
+                                                    class="img-responsive portfolio-img"></a>
+        <p>{{proj.info | slice:0:80}}...</p>
+      </div>
+    </div>
+  </div>
+</div>

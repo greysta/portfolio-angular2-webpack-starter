@@ -1,0 +1,9 @@
+.portfolio-img {
+  max-height: 300px;
+  margin: auto;
+  padding: 5px;
+}
+
+.ShowItemRight {
+  float: right;
+}
