@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs/Subscription';
 @Component({
   selector: 'proj-detail',
   templateUrl: './portfolio-item.component.html',
-  styleUrls: ['/portfolio-item.component.css'],
+  styleUrls: ['./portfolio-item.component.css'],
   providers: [HttpService]
 })
 export class PortfolioItemComponent implements OnDestroy, OnInit {
@@ -27,6 +27,7 @@ export class PortfolioItemComponent implements OnDestroy, OnInit {
   }
 
   public  ngOnInit(): void {
-    this.httpService.getData().subscribe((data: Response) => this.projects = data.json());
+    this.httpService.getData('/assets/projbd.json')
+	.subscribe((data: Response) => this.projects = data.json());
   }
 }

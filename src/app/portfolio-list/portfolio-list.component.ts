@@ -30,7 +30,8 @@ export class PortfolioListComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.httpService.getData().subscribe((data: Response) => this.projects = data.json());
+    this.httpService.getData('/assets/projbd.json')
+	.subscribe((data: Response) => this.projects = data.json());
   }
 
 }

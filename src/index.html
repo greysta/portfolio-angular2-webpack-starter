@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./styles/preloader.css">
-  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/preloader.css">
+  <link rel="stylesheet" href="/styles/bootstrap.min.css">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
   <% if (webpackConfig.htmlElements.headTags) { %>
   <%= webpackConfig.htmlElements.headTags %>
   <% } %>
-  <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
 </head>
 
 <body>
@@ -26,6 +26,15 @@
 <!-- Webpack Dev Server reload -->
 <script src="/webpack-dev-server.js"></script>
 <% } %>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/assets/service-worker.js').then(function(registration) {
+        console.log('Service Worker registered');
+      }).catch(function(err) {
+        console.log('Service Worker registration failed: ', err);
+      });
+    }
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
